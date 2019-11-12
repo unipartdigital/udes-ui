@@ -1,0 +1,33 @@
+{
+  "name": "@udes-ui/form-dummy",
+  "version": "0.0.0",
+  "description": "UDES UI Form Dummy",
+  "author": "Richard Whitefoot <mouseholdonline@gmail.com>",
+  "license": "GNU GPLv3",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unipartdigital/udes-ui.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/unipartdigital/udes-ui/issues"
+  },
+  "keywords": [
+    "udes",
+    "udes-ui"
+  ],
+  "dependencies": {
+    "@types/react": "^16.9.11"
+  }
+}

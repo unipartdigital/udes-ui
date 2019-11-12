@@ -1,0 +1,28 @@
+{
+  "name": "@udes-ui/monorepo",
+  "version": "0.0.0",
+  "description": "UDES UI",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna run tsc && lerna publish"
+  },
+  "repository": "https://github.com/unipartdigital/udes-ui.git",
+  "keywords": [
+    "udes",
+    "udes-ui"
+  ],
+  "license": "GNU GPLv3",
+  "devDependencies": {
+    "@types/node": "^12.12.7",
+    "lerna": "^3.18.4",
+    "react": "^16.11.0",
+    "typescript": "^3.7.2"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "dependencies": {
+    "@udes-ui/form-dummy": "file:packages/udes-ui-form-dummy"
+  }
+}
