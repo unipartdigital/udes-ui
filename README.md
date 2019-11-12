@@ -12,7 +12,7 @@ Collection of packages for the UDES UI.
 
 ## Contribution and development guide
 
-See the[contributing guidelines](https://github.com/unipartdigital/udes-ui/blob/master/CONTRIBUTING.md)
+See the [contributing guidelines](https://github.com/unipartdigital/udes-ui/blob/master/CONTRIBUTING.md)
 
 
 ### License
