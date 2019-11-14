@@ -54,5 +54,6 @@ Each package defines its own build config, linting, and testing.  Shared dependa
 
 2. Ensure you can import the package and 'smoke' test that it is functional
 3. Make sure you're logged in to NPM from your shell. Run `npm login` if necessary.
+5. To make the release, run `lerna run build`
 4. cd packages/pathToPackage
-5. To make the release, run `npm publish --access public`
+5. To release, run `npm publish --access public`
