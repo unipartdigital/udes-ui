@@ -4,24 +4,50 @@
   "description": "UDES UI",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna run tsc && lerna publish"
+    "lint": "lerna run lint",
+    "build": "lerna run build"
   },
   "repository": "https://github.com/unipartdigital/udes-ui.git",
   "keywords": [
     "udes",
     "udes-ui"
   ],
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@udes-ui/form-dummy": "file:packages/udes-ui-form-dummy"
+  },
   "devDependencies": {
     "@types/node": "^12.12.7",
+    "@types/react": "^16.9.11",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "lerna": "^3.18.4",
+    "prettier": "^1.18.2",
     "react": "^16.11.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "ts-loader": "^6.0.4",
+    "url-loader": "^2.1.0",
+    "file-loader": "^4.2.0",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0"
   },
   "workspaces": [
     "./packages/*"
-  ],
-  "dependencies": {
-    "@udes-ui/form-dummy": "file:packages/udes-ui-form-dummy"
-  }
+  ]
 }

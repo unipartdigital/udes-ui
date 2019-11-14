@@ -25,3 +25,11 @@ yarn.lock
 test-changelog.md
 lerna-debug.log
 npm-debug.log
+
+# ---> VisualStudioCode
+.vscode/*
+.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

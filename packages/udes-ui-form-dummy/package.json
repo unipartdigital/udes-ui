@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "UDES UI Form Dummy",
   "author": "Richard Whitefoot <mouseholdonline@gmail.com>",
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0-or-later",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib",
@@ -18,7 +18,9 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "lint": "eslint src -c .eslintrc.json --ext js,jsx,ts,tsx; exit 0",
+    "build": "webpack --mode production"
   },
   "bugs": {
     "url": "https://github.com/unipartdigital/udes-ui/issues"
@@ -26,8 +28,5 @@
   "keywords": [
     "udes",
     "udes-ui"
-  ],
-  "dependencies": {
-    "@types/react": "^16.9.11"
-  }
+  ]
 }
