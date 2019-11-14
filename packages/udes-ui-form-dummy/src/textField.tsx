@@ -8,10 +8,16 @@ interface Props {
   "data-testid"?: string;
 }
 
-const TextField = (props: Props) => (
+export const TextField: React.FC<Props> = (props: Props) => (
   <>
     <label>{props.label}</label>
-    <input data-testid={props["data-testid"]} name={props.name} value={props.value} onChange={props.onChange} placeholder={props.label} />
+    <input
+      data-testid={props["data-testid"]}
+      name={props.name}
+      value={props.value}
+      onChange={props.onChange}
+      placeholder={props.label}
+    />
   </>
 );
 

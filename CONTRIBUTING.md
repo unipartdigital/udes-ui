@@ -48,5 +48,11 @@ Each package defines its own build config, linting, and testing.  Shared dependa
 
 **Prerequisite:** You'll need an [npmjs.com](https://npmjs.com) account that is part of the `udes-ui` organization.
 
-1. Make sure you're logged in to NPM from your shell. Run `npm login` if necessary.
-2. To make the release, run `npm run release` and follow the prompts.
+1. To test your package, run `npm install` with the full path to your package directory:
+
+```npm install packages/pathToPackage```
+
+2. Ensure you can import the package and 'smoke' test that it is functional
+3. Make sure you're logged in to NPM from your shell. Run `npm login` if necessary.
+4. cd packages/pathToPackage
+5. To make the release, run `npm publish --access public`
