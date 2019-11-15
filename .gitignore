@@ -17,6 +17,8 @@ babel.config.js
 build/
 coverage/
 esm/
+lib/
+dist/
 jest.config.js
 logs/
 node_modules/

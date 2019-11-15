@@ -1,8 +1,11 @@
+const merge = require("webpack-merge");
+const common = require("../../webpack.config");
 const pkg = require("./package.json");
 const path = require("path");
 const libraryName = pkg.name;
 
-module.exports = {
+// Merge in local config here
+module.exports = merge(common, {
   entry: "./src/index.js",
   output: {
     filename: "index.js",
@@ -18,47 +21,4 @@ module.exports = {
       "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
     },
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: "babel-loader",
-        },
-      },
-      {
-        test: /\.tsx$/,
-        use: ["babel-loader", "ts-loader"],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
-          { loader: "sass-loader" },
-        ],
-      },
-      {
-        test: /\.(png|gif|jpg|svg)$/,
-        use: {
-          loader: "file-loader",
-        },
-      },
-    ],
-  },
-  externals: {
-    // Don't bundle react or react-dom
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "React",
-      root: "React",
-    },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "ReactDOM",
-      root: "ReactDOM",
-    },
-  },
-};
+});
