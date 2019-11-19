@@ -2,7 +2,8 @@
 
 Collection of packages for the UDES UI.
 
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) 
+[![License](https://img.shields.io/github/license/unipartdigital/udes-ui.svg)](https://github.com/unipartdigital/udes-ui/blob/master/LICENSE)
 
 ## Storybook UI Sandbox
 
