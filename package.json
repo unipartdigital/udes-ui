@@ -5,7 +5,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "lint": "lerna run lint",
-    "build": "lerna run build",
     "check": "lerna run check"
   },
   "repository": "https://github.com/unipartdigital/udes-ui.git",
