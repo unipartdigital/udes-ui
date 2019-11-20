@@ -5,7 +5,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "lint": "lerna run lint",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "check": "lerna run check"
   },
   "repository": "https://github.com/unipartdigital/udes-ui.git",
   "keywords": [
@@ -35,10 +36,15 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "fibers": "^4.0.2",
     "file-loader": "^4.2.0",
+    "husky": "^3.1.0",
     "lerna": "^3.18.4",
+    "lint-staged": "^9.4.3",
+    "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
+    "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
@@ -51,5 +57,15 @@
   },
   "workspaces": [
     "./packages/*"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  }
 }
