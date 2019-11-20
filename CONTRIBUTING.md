@@ -8,8 +8,25 @@
 ```sh
 git clone ...udes-ui && cd udes-ui
 npm install
-npm run build
 ```
+
+See each package for build instructions
+
+### Linting
+
+To run linting:
+
+```
+cd udes-ui
+npm run lint
+```
+To check staged files before committing:
+```
+cd udes-ui
+npm run check
+```
+
+The pre-commit hook for linting checks must not be bypassed
 
 ### File organization
 
