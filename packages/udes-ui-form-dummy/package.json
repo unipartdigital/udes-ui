@@ -19,7 +19,8 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 1",
+    "jest:lerna": "jest --coverage",
+    "test": "lerna run jest:lerna",
     "lint": "eslint src -c .eslintrc.json --ext js,jsx,ts,tsx; exit 0",
     "check": "lint-staged",
     "build": "webpack --mode production"
@@ -32,9 +33,26 @@
     "udes-ui"
   ],
   "dependencies": {
-    "@types/react": "^16.9.11"
+    "@types/react": "16.9.11"
   },
   "peerDependencies": {
-    "react": "^16.11.0"
+    "react": "16.12.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "../../test-shim.js",
+      "../../test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "../../test-preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.test.(ts|tsx|js)"
+    ]
   }
 }

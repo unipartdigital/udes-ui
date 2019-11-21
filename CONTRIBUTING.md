@@ -28,6 +28,24 @@ npm run check
 
 The pre-commit hook for linting checks must not be bypassed
 
+## Automated Tests
+
+Packages have to be configured to run automated tests within their package.json
+file, see the @udes-ui/form-dummy package for an example.  Automated tests can 
+be run for all packages, or individual packages during developement.
+
+Run all tests:
+```
+cd udes-ui
+npm run test
+```
+
+Run individual package tests:
+```
+cd packages/pathToPackage
+npm run test
+```
+
 ### File organization
 
 [lerna](https://github.com/lerna/lerna/) is used to manage versions and dependencies between packages in this monorepo.
