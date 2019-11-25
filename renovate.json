@@ -1,5 +1,12 @@
 {
   "extends": [
-    "config:base"
-  ]
+    "config:base", 
+    "semanticCommitTypeAll(chore)",
+    ":semanticCommits"
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "automergeType": "branch"
 }
