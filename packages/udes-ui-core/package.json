@@ -33,7 +33,11 @@
     "udes-ui"
   ],
   "dependencies": {
-    "@types/react": "16.9.13"
+    "@material-ui/core": "4.7.0",
+    "@material-ui/styles": "4.6.0",
+    "@types/react": "16.9.13",
+    "@types/styled-components": "4.4.0",
+    "styled-components": "4.4.1"
   },
   "peerDependencies": {
     "react": "16.12.0"
