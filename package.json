@@ -15,6 +15,7 @@
   ],
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@udes-ui/core": "file:packages/udes-ui-core",
     "@udes-ui/form-dummy": "file:packages/udes-ui-form-dummy",
     "@udes-ui/storybook": "file:packages/udes-ui-storybook"
   },
