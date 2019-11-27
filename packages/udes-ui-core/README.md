@@ -46,6 +46,27 @@ const newTheme = createModifiedTheme(theme, {
 <ThemeProvider theme={theme}>...</ThemeProvider>
 ```
 
+#### Button
+
+A button with an integrated loading spinner, available in `primary` and
+`secondary` variants.
+
+| Prop Name       | Type      | Default    | Description |
+|-----------------|-----------|------------|-------------|
+| `type`          | <code>"submit" &#124; "reset" &#124; "button"</code> | `"button"` | Form behaviour. |
+| `"data-testid"` | `string?` | -          | The `button`'s `data-testid`, for use with DOM / React Testing Library. |
+| `name`          | `string?` | -          | Name for form data.  |
+| `value`         | `string?` | -          | Value for form data. |
+| `variant`       | <code>"primary" &#124; "secondary"</code> | `"primary"` | UDES button variant to use. |
+| `fullWidth`     | `boolean` | `false`    | If `true`, the button will take up the full width of its container. |
+| `disabled`      | `boolean` | `false`    | -           |
+| `loading`       | `boolean` | `false`    | -           |
+| `onClick`       | `(e: React.MouseEvent<HTMLButtonElement>) => void` | -       | -           |
+
+```jsx
+<Button onClick={() => doConfirm()}>Confirm</Button>
+```
+
 #### VerticalLayout
 
 Stacks all children vertically, with spacing between them.

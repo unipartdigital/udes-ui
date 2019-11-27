@@ -2,6 +2,7 @@ import { createMuiTheme, Theme as MUITheme } from "@material-ui/core";
 // eslint-disable-next-line max-len
 import { ThemeOptions as MUIThemeOptions } from "@material-ui/core/styles/createMuiTheme";
 import palette from "./palette";
+import { theme as buttonTheme } from "./button";
 
 export type Theme = MUITheme;
 export type ThemeOptions = MUIThemeOptions;
@@ -35,7 +36,7 @@ export function createModifiedTheme(
   return createMuiTheme(merge(theme, newOptions));
 }
 
-const themeOptions: ThemeOptions = {
+let themeOptions: ThemeOptions = {
   palette,
   overrides: {},
   props: {
@@ -58,6 +59,9 @@ const themeOptions: ThemeOptions = {
     fontFamily: ["Source Sans Pro", "Helvetica", "sans-serif"].join(", "),
   },
 };
+
+// Mix in component-specific theme options
+themeOptions = merge(themeOptions, buttonTheme);
 
 export const theme = createMuiTheme(themeOptions);
 
