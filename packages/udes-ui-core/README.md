@@ -45,3 +45,18 @@ const newTheme = createModifiedTheme(theme, {
 
 <ThemeProvider theme={theme}>...</ThemeProvider>
 ```
+
+#### VerticalLayout
+
+Stacks all children vertically, with spacing between them.
+
+| Prop Name | Type      | Default | Description |
+|-----------|-----------|---------|-------------|
+| `spacing` | `number?` |     `2` | The spacing to use, as a multiple of the Material UI theme's base spacing. |
+
+```jsx
+<VerticalLayout>
+  <Button>Accept</Button>
+  <Button>Cancel</Button>
+</VerticalLayout>
+```
