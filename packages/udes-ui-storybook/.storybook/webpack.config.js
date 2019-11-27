@@ -8,6 +8,11 @@ config.module.rules.push({
     // Optional
     {
       loader: require.resolve('react-docgen-typescript-loader'),
+      options: {
+        compilerOptions: {
+          esModuleInterop: true,
+        },
+      },
     },
   ],
 });
