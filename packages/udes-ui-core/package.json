@@ -1,0 +1,58 @@
+{
+  "name": "@udes-ui/core",
+  "version": "0.0.1",
+  "description": "UDES UI Core",
+  "author": "Sean Quah <sean.quah@unipart.io>",
+  "license": "GPL-3.0-or-later",
+  "main": "dist/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unipartdigital/udes-ui.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "jest:lerna": "jest --coverage",
+    "test": "lerna run jest:lerna",
+    "lint": "eslint src -c .eslintrc.json --ext js,jsx,ts,tsx; exit 0",
+    "check": "lint-staged",
+    "build": "webpack --mode production"
+  },
+  "bugs": {
+    "url": "https://github.com/unipartdigital/udes-ui/issues"
+  },
+  "keywords": [
+    "udes",
+    "udes-ui"
+  ],
+  "dependencies": {
+    "@types/react": "16.9.13"
+  },
+  "peerDependencies": {
+    "react": "16.12.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "../../test-shim.js",
+      "../../test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "../../test-preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.test.(ts|tsx|js)"
+    ]
+  }
+}
