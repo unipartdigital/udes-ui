@@ -33,7 +33,10 @@ requireContext.keys().forEach((packageName) => {
     packageExport.default &&
     !Array.isArray(packageExport.default)
   ) {
-    const { examples = EMPTY_EXAMPLES } = packageExport.default;
+    const {
+      decorator = (storyFn) => storyFn(),
+      examples = EMPTY_EXAMPLES,
+    } = packageExport.default;
 
     examples.forEach((example) => {
       const {
@@ -45,6 +48,7 @@ requireContext.keys().forEach((packageName) => {
 
       storiesOf(storyPath, module)
         .addParameters({ options })
+        .addDecorator(decorator)
         .addDecorator(withKnobs({ escapeHTML: false }))
         .addWithJSX(storyName, renderStory);
     });
