@@ -10,7 +10,7 @@ module.exports = {
         },
       },
       {
-        test: /\.tsx$/,
+        test: /\.tsx?$/,
         use: ["babel-loader", "ts-loader"],
       },
       {
