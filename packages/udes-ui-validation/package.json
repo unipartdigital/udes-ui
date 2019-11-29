@@ -1,0 +1,57 @@
+{
+  "name": "udes-ui-validation",
+  "version": "0.0.1",
+  "description": "Package to validate react component fields.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "jest:lerna": "jest --coverage",
+    "test": "lerna run jest:lerna",
+    "lint": "eslint src -c .eslintrc.json --ext js,jsx,ts,tsx; exit 0",
+    "check": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unipartdigital/udes-ui.git"
+  },
+  "keywords": [
+    "udes",
+    "udes-ui",
+    "udes-ui-validator"
+  ],
+  "author": "Robert Smith <robert.smith@unipart.io>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/unipartdigital/udes-ui/issues"
+  },
+  "homepage": "https://github.com/unipartdigital/udes-ui#readme",
+  "dependencies": {
+    "react-scripts": "3.2.0",
+    "styled-components": "4.4.1",
+    "validator": "12.1.0"
+  },
+  "devDependencies": {},
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.+(ts|tsx|js)",
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript",
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry"
+        }
+      ]
+    ]
+  }
+}

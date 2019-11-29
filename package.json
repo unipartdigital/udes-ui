@@ -17,7 +17,11 @@
   "dependencies": {
     "@udes-ui/core": "file:packages/udes-ui-core",
     "@udes-ui/form-dummy": "file:packages/udes-ui-form-dummy",
-    "@udes-ui/storybook": "file:packages/udes-ui-storybook"
+    "@udes-ui/storybook": "file:packages/udes-ui-storybook",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.1",
+    "test": "0.6.0",
+    "validator": "^12.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.7.4",
@@ -36,6 +40,7 @@
     "@typescript-eslint/parser": "2.10.0",
     "babel-loader": "8.0.6",
     "babel-plugin-require-context-hook": "1.0.0",
+    "babel-plugin-transform-export-extensions": "6.22.0",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.1",
     "eslint": "6.7.2",
@@ -50,7 +55,8 @@
     "file-loader": "5.0.2",
     "gh-pages": "2.1.1",
     "husky": "3.1.0",
-    "jest": "24.9.0",
+    "jest": "^24.9.0",
+    "jest-cli": "24.9.0",
     "lerna": "3.19.0",
     "lint-staged": "9.5.0",
     "node-sass": "4.13.0",
@@ -78,7 +84,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx,ts,tsx,test}": [
       "eslint"
     ]
   }
