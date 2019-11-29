@@ -12,6 +12,7 @@
     "isolatedModules": false,
     "jsx": "react",
     "noImplicitAny": false,
+    "noImplicitThis": false,
     "noEmit": false,
     "declaration": true
   },
