@@ -1,29 +1,7 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import TextField from "../form/TextField";
-import NumberField from "../form/NumberField";
+import TextField from "../form/textField";
+import NumberField from "../form/numberField";
 import FormValidator, { changeHandler } from "../validation";
-
-// CSS hardcoding will not be used in future, just to facilitate and easy demo
-// of a styled material ui component
-const ComponentWrapper = styled.div`
-  width: 100%;
-  height: calc(100% - 172px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Open Sans", sans-serif;
-  padding: 1rem;
-  box-sizing: border-box;
-`;
-
-const ComponentContainer = styled.div`
-  border: 1px solid #efefef;
-  padding: 2rem;
-  width: 80%;
-  max-width: 350px;
-  box-shadow: 0px 0px 4px #efefef;
-`;
 
 const Material: React.FC = () => {
   const [numberField, setNumber] = useState(0);
@@ -154,32 +132,29 @@ const Material: React.FC = () => {
   }
 
   return (
-    <ComponentWrapper>
-      <ComponentContainer>
-        {/* form control import here probs? */}
-        <TextField
-          label="Text Field"
-          name="Text Field"
-          fullWidth={true}
-          value={textField}
-          error={errorTextState}
-          onChange={handleTextChange}
-          is-valid={textValidity}
-          data-testid="materialTextField"
-        />
-        <NumberField
-          label="Number Field"
-          name="Number Field"
-          fullWidth={true}
-          value={numberField}
-          autoFocus={focus}
-          onChange={handleNumberChange}
-          is-valid={numberValidity}
-          error={errorNumberState}
-          data-testid="materialNumberField"
-        />
-      </ComponentContainer>
-    </ComponentWrapper>
+    <div>
+      <TextField
+        label="Text Field"
+        name="Text Field"
+        fullWidth={true}
+        value={textField}
+        error={errorTextState}
+        onChange={handleTextChange}
+        is-valid={textValidity}
+        data-testid="materialTextField"
+      />
+      <NumberField
+        label="Number Field"
+        name="Number Field"
+        fullWidth={true}
+        value={numberField}
+        autoFocus={focus}
+        onChange={handleNumberChange}
+        is-valid={numberValidity}
+        error={errorNumberState}
+        data-testid="materialNumberField"
+      />
+    </div>
   );
 };
 

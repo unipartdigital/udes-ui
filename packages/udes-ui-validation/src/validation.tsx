@@ -1,8 +1,9 @@
+/* eslint-disable max-len */
 import validator from "validator";
 
 /*
    Based on code found at
-https://medium.com/code-monkey/client-side-form-validation-in-react-40e367de47ba
+   https://medium.com/code-monkey/client-side-form-validation-in-react-40e367de47ba
 
    Default validators provided by the above package can be found at
    https://www.npmjs.com/package/validator. It provides most common use cases

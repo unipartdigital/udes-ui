@@ -5,7 +5,7 @@ import MaterialComponent from "../exampleComponent/materialUiComponent";
 afterEach(cleanup);
 
 describe("Validator Material UI tests", () => {
-  test("Valid state causes no change", async () => {
+  test("Valid state does not result in error", async () => {
     const testRenderer = render(<MaterialComponent />);
     const numberField = testRenderer.getByTestId("materialNumberField");
     expect(numberField["value"]).toBe("0");
@@ -45,6 +45,7 @@ describe("Validator Material UI tests", () => {
     expect(numberField["value"]).toBe("");
     expect(testRenderer.getByText("Cannot be greater than 10"));
   });
+
   test("Invalid state on Text field", () => {
     const testRenderer = render(<MaterialComponent />);
     const textField = testRenderer.getByTestId("materialTextField");
