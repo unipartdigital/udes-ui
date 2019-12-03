@@ -1,7 +1,6 @@
 import React from "react";
 import { TextField as MuiTextField } from "@material-ui/core";
 
-// TODO Rob: Change the path of Form to match convention for path naming
 interface Props {
   /** Defaults to `"text"` */
   type?: string;

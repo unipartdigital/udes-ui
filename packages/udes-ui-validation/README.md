@@ -1,7 +1,9 @@
-## @udes-ui/form-dummy
+## @udes-ui/validation
 
-Description
+Library providing a validator for fields. Example provided for a react component
+ using material ui.
 
 #### Example usage
 
-Do not use, dummy component!
+Please see the code in src/validation for longform explanation of usage. For an
+example of specific usage please see example component.
