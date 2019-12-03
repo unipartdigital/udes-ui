@@ -31,16 +31,21 @@
   },
   "devDependencies": {},
   "jest": {
-    "roots": [
-      "<rootDir>/src"
+    "setupFiles": [
+      "../../test-shim.js",
+      "../../test-setup.js"
     ],
-    "testMatch": [
-      "**/__tests__/**/*.+(ts|tsx|js)",
-      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    }
+      "^.+\\.(ts|tsx)$": "../../test-preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.test.(ts|tsx|js)"
+    ]
   },
   "babel": {
     "presets": [
