@@ -20,8 +20,8 @@
     "@udes-ui/storybook": "file:packages/udes-ui-storybook"
   },
   "devDependencies": {
-    "@babel/core": "7.7.4",
-    "@babel/preset-env": "7.7.4",
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.7.5",
     "@babel/preset-react": "7.7.4",
     "@storybook/addon-info": "5.2.8",
     "@testing-library/jest-dom": "4.2.4",
