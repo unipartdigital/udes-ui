@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextField from "./form/textField";
 import NumberField from "./form/numberField";
-import FormValidator, { changeHandler } from "../../validator/validation";
+import FormValidator, { changeHandler } from "../../validation/validation";
 
 const Material: React.FC = () => {
   const [numberField, setNumber] = useState(0);
