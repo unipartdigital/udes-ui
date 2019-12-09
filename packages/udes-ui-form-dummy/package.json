@@ -33,7 +33,7 @@
     "udes-ui"
   ],
   "dependencies": {
-    "@types/react": "16.9.15"
+    "@types/react": "16.9.16"
   },
   "peerDependencies": {
     "react": "16.12.0"
