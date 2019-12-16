@@ -1,7 +1,7 @@
 {
-  "name": "udes-ui-validation",
+  "name": "@udes-ui/validation",
   "version": "0.0.1",
-  "description": "Package to validate react component fields.",
+  "description": "Package to validate react component fields",
   "author": "Robert Smith <robert.smith@unipart.io>",
   "license": "GPL-3.0-or-later",
   "main": "dist/index.js",
@@ -28,7 +28,7 @@
   "keywords": [
     "udes",
     "udes-ui",
-    "udes-ui-validator"
+    "validator"
   ],
   "bugs": {
     "url": "https://github.com/unipartdigital/udes-ui/issues"
