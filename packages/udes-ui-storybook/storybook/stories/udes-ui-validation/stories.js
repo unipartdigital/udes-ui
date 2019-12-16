@@ -4,7 +4,7 @@ import TextField from "./form/textField";
 import NumberField from "./form/numberField";
 import FormValidator, {
   changeHandler,
-} from "../../../../udes-ui-validation/src/validation";
+} from "../../../../udes-ui-validation/src";
 import { text, boolean } from "@storybook/addon-knobs";
 
 export default [
