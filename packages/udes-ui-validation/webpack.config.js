@@ -23,4 +23,25 @@ module.exports = merge(common, {
       "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
     },
   },
+  externals: {
+    // Don't bundle @material-ui or styled-components
+    "@material-ui/core": {
+      commonjs: "@material-ui/core",
+      commonjs2: "@material-ui/core",
+      amd: "@material-ui/core",
+      root: "mui",
+    },
+    "@material-ui/styles": {
+      commonjs: "@material-ui/styles",
+      commonjs2: "@material-ui/styles",
+      amd: "@material-ui/styles",
+      root: "mui_styles",
+    },
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled-components",
+      root: "styled",
+    },
+  },
 });
