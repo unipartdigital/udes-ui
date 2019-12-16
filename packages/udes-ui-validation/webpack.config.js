@@ -8,7 +8,7 @@ const libraryName = pkg.name;
 
 // Merge in local config here
 module.exports = merge(common, {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist/"),
