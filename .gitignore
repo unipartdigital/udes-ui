@@ -36,3 +36,5 @@ npm-debug.log
 !.vscode/extensions.json
 !.vscode/settings.json.default
 *.code-workspace
+
+*.d.ts
