@@ -47,6 +47,6 @@
     "ts-loader": "6.2.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "2.1.1"
   }
 }
