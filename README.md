@@ -1,6 +1,6 @@
 # @udes-ui 🔌💡
 
-Collection of packages for the UDES UI.
+Collection of npm packages for the Unipart Digital Enterprise System (UDES). UDES is a powerful Enterprise Resource Planning (ERP) suite, that can be deployed with speed and agility.
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) 
 [![License](https://img.shields.io/github/license/unipartdigital/udes-ui.svg)](https://github.com/unipartdigital/udes-ui/blob/master/LICENSE)
