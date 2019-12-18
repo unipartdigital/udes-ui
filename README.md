@@ -15,6 +15,7 @@ View UI Components: <https://unipartdigital.github.io/udes-ui/?path=/story/*>
 | Package | Version | Note |
 |--|--|--|
 | [@udes-ui/core](https://github.com/unipartdigital/udes-ui/tree/master/packages/udes-ui-core) | [![Version](https://img.shields.io/npm/v/@udes-ui/core.svg?style=flat-square)](https://www.npmjs.com/package/@udes-ui/core) | Core components |
+| [@udes-ui/validation](https://github.com/unipartdigital/udes-ui/tree/master/packages/udes-ui-validation) | [![Version](https://img.shields.io/npm/v/@udes-ui/validation.svg?style=flat-square)](https://www.npmjs.com/package/@udes-ui/validation) | Validation |
 | [@udes-ui/form-dummy](https://github.com/unipartdigital/udes-ui/tree/master/packages/udes-ui-form-dummy) | [![Version](https://img.shields.io/npm/v/@udes-ui/form-dummy.svg?style=flat-square)](https://www.npmjs.com/package/@udes-ui/form-dummy) | Dummy package |
 
 ## Contribution and development guide
