@@ -45,5 +45,8 @@
     "storybook-addon-jsx": "7.1.13",
     "styled-components": "4.4.1",
     "ts-loader": "6.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
