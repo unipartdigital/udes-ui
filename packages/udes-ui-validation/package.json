@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/react": "16.9.19",
-    "@types/styled-components": "4.4.2"
+    "@types/styled-components": "4.4.3"
   },
   "peerDependencies": {
     "@material-ui/core": "4.9.2",
