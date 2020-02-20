@@ -36,7 +36,7 @@
     "@storybook/addons": "5.3.13",
     "@storybook/preset-typescript": "1.2.0",
     "@storybook/react": "5.3.13",
-    "@types/react": "16.9.20",
+    "@types/react": "16.9.21",
     "@types/storybook__react": "4.0.2",
     "@udes-ui/form-dummy": "file:../udes-ui-form-dummy",
     "awesome-typescript-loader": "5.2.1",
