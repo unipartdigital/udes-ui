@@ -40,7 +40,7 @@
     "@types/storybook__react": "4.0.2",
     "@udes-ui/form-dummy": "file:../udes-ui-form-dummy",
     "awesome-typescript-loader": "5.2.1",
-    "react": "16.13.0",
+    "react": "16.13.1",
     "react-docgen-typescript-loader": "3.7.1",
     "storybook-addon-jsx": "7.1.15",
     "styled-components": "5.0.1",
