@@ -42,7 +42,7 @@
     "@material-ui/styles": "4.9.6",
     "react": "16.13.1",
     "styled-components": "5.0.1",
-    "validator": "12.2.0"
+    "validator": "13.0.0"
   },
   "jest": {
     "setupFiles": [
