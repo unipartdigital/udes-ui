@@ -44,7 +44,7 @@
     "react-docgen-typescript-loader": "3.7.1",
     "storybook-addon-jsx": "7.1.15",
     "styled-components": "5.0.1",
-    "ts-loader": "6.2.1"
+    "ts-loader": "6.2.2"
   },
   "devDependencies": {
     "gh-pages": "2.2.0"
