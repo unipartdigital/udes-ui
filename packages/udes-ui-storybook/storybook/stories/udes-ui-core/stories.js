@@ -1,6 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import { boolean, text } from "@storybook/addon-knobs";
+import { boolean, text, select } from "@storybook/addon-knobs";
 import { Button, VerticalLayout } from "../../../../udes-ui-core/src";
 
 const buttonVariants = [
@@ -16,6 +16,15 @@ export default [
       const fullWidth = boolean("Full width", false);
       const disabled = boolean("Disabled", false);
       const loading = boolean("Loading", false);
+      const size = select(
+        "Size",
+        {
+          Small: "small",
+          Medium: "medium",
+          Large: "large",
+        },
+        "large",
+      );
 
       return (
         <Button
@@ -24,6 +33,7 @@ export default [
           disabled={disabled}
           loading={loading}
           onClick={action("clicked")}
+          size={size}
         >
           {content}
         </Button>
@@ -37,23 +47,61 @@ export default [
     renderStory: () => {
       return (
         <VerticalLayout>
+          <Button variant="primary" fullWidth size="small">
+            Primary Small
+          </Button>
+          <Button variant="primary" fullWidth disabled size="small">
+            Primary Small Disabled
+          </Button>
+          <Button variant="primary" fullWidth loading size="small">
+            Primary Small Loading
+          </Button>
+          <Button variant="secondary" fullWidth size="small">
+            Secondary Small
+          </Button>
+          <Button variant="secondary" fullWidth disabled size="small">
+            Secondary Small Disabled
+          </Button>
+          <Button variant="secondary" fullWidth loading size="small">
+            Secondary Small Loading
+          </Button>
+
+          <Button variant="primary" fullWidth size="medium">
+            Primary Medium
+          </Button>
+          <Button variant="primary" fullWidth disabled size="medium">
+            Primary Medium Disabled
+          </Button>
+          <Button variant="primary" fullWidth loading size="medium">
+            Primary Medium Loading
+          </Button>
+          <Button variant="secondary" fullWidth size="medium">
+            Secondary Medium
+          </Button>
+          <Button variant="secondary" fullWidth disabled size="medium">
+            Secondary Medium Disabled
+          </Button>
+          <Button variant="secondary" fullWidth loading size="medium">
+            Secondary Medium Loading
+          </Button>
+
           <Button variant="primary" fullWidth>
-            Primary
+            Primary Default Large
           </Button>
           <Button variant="primary" fullWidth disabled>
-            Primary Disabled
+            Primary Default Large Disabled
           </Button>
           <Button variant="primary" fullWidth loading>
-            Primary Loading
+            Primary Default Large Loading
           </Button>
           <Button variant="secondary" fullWidth>
-            Secondary
+            Secondary Default Large
           </Button>
           <Button variant="secondary" fullWidth disabled>
-            Secondary Disabled
+            Secondary Default Large Disabled
           </Button>
           <Button variant="secondary" fullWidth loading>
-            Secondary Loading
+            Secondary Default Large Loading
           </Button>
         </VerticalLayout>
       );
