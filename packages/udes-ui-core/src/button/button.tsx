@@ -26,6 +26,9 @@ interface Props {
    */
   variant?: "primary" | "secondary";
 
+  // Size, defaults to large
+  size?: "small" | "medium" | "large";
+
   // Layout
   /** If `true`, the button will take up the full width of its container. */
   fullWidth?: boolean;
@@ -58,6 +61,7 @@ export const Button: React.FC<Props> = (props: Props) => (
     data-testid={props["data-testid"]}
     name={props.name}
     value={props.value}
+    size={props.size}
     variant={props.variant !== "secondary" ? "contained" : "outlined"}
     color="primary"
     fullWidth={props.fullWidth}
