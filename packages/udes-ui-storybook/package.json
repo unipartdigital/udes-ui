@@ -41,7 +41,7 @@
     "@udes-ui/form-dummy": "file:../udes-ui-form-dummy",
     "awesome-typescript-loader": "5.2.1",
     "react": "16.13.1",
-    "react-docgen-typescript-loader": "3.7.1",
+    "react-docgen-typescript-loader": "3.7.2",
     "storybook-addon-jsx": "7.1.15",
     "styled-components": "5.0.1",
     "ts-loader": "6.2.2"
