@@ -32,7 +32,7 @@
     "@types/jest": "25.2.3",
     "@types/node": "12.12.42",
     "@types/react": "16.9.35",
-    "@types/webpack": "4.41.14",
+    "@types/webpack": "4.41.15",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "babel-loader": "8.1.0",
