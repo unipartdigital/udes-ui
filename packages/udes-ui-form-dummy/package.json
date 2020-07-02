@@ -5,6 +5,7 @@
   "author": "Richard Whitefoot <mouseholdonline@gmail.com>",
   "license": "GPL-3.0-or-later",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
