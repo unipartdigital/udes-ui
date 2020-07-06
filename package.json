@@ -28,7 +28,7 @@
     "@material-ui/styles": "4.10.0",
     "@storybook/addon-info": "5.3.19",
     "@testing-library/jest-dom": "5.11.0",
-    "@testing-library/react": "10.4.3",
+    "@testing-library/react": "10.4.4",
     "@types/enzyme": "3.10.5",
     "@types/enzyme-adapter-react-16": "1.0.6",
     "@types/jest": "26.0.3",
