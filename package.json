@@ -34,7 +34,7 @@
     "@types/jest": "26.0.13",
     "@types/node": "12.12.55",
     "@types/react": "16.9.49",
-    "@types/webpack": "4.41.21",
+    "@types/webpack": "4.41.22",
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
     "babel-loader": "8.1.0",
