@@ -29,7 +29,7 @@
     "@storybook/addon-info": "5.3.21",
     "@testing-library/jest-dom": "5.11.5",
     "@testing-library/react": "10.4.9",
-    "@types/enzyme": "3.10.7",
+    "@types/enzyme": "3.10.8",
     "@types/enzyme-adapter-react-16": "1.0.6",
     "@types/jest": "26.0.15",
     "@types/node": "12.19.2",
