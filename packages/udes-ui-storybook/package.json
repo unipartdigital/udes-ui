@@ -43,7 +43,7 @@
     "react": "16.14.0",
     "react-docgen-typescript-loader": "3.7.2",
     "storybook-addon-jsx": "7.3.4",
-    "styled-components": "5.2.0",
+    "styled-components": "5.2.1",
     "ts-loader": "7.0.5"
   },
   "devDependencies": {
