@@ -34,7 +34,7 @@
     "udes-ui"
   ],
   "dependencies": {
-    "@types/react": "16.14.0"
+    "@types/react": "16.14.1"
   },
   "peerDependencies": {
     "react": "16.14.0"
