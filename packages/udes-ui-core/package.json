@@ -40,7 +40,7 @@
   "peerDependencies": {
     "@material-ui/core": "4.11.1",
     "@material-ui/styles": "4.11.1",
-    "react": "16.14.0",
+    "react": "17.0.2",
     "styled-components": "5.2.1"
   },
   "jest": {
