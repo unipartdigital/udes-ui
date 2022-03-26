@@ -35,7 +35,7 @@
     "url": "https://github.com/unipartdigital/udes-ui/issues"
   },
   "devDependencies": {
-    "@types/react": "16.14.2",
+    "@types/react": "17.0.43",
     "@types/styled-components": "5.1.4"
   },
   "peerDependencies": {
