@@ -35,13 +35,13 @@
     "url": "https://github.com/unipartdigital/udes-ui/issues"
   },
   "devDependencies": {
-    "@types/react": "16.14.2",
+    "@types/react": "18.3.12",
     "@types/styled-components": "5.1.4"
   },
   "peerDependencies": {
     "@material-ui/core": "4.11.1",
     "@material-ui/styles": "4.11.1",
-    "react": "16.14.0",
+    "react": "18.3.1",
     "styled-components": "5.2.1",
     "validator": "13.1.17"
   },
