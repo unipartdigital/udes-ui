@@ -34,10 +34,10 @@
     "udes-ui"
   ],
   "dependencies": {
-    "@types/react": "16.14.2"
+    "@types/react": "19.3.0"
   },
   "peerDependencies": {
-    "react": "16.14.0"
+    "react": "19.3.0"
   },
   "jest": {
     "setupFiles": [
